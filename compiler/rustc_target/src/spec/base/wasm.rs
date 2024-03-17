@@ -108,7 +108,7 @@ pub fn options() -> TargetOptions {
         // that eventually we can ship a `pic`-compatible standard library which
         // works with `static` as well (or works with some method of generating
         // non-relative calls and such later on).
-        relocation_model: RelocModel::Static,
+        relocation_model: RelocModel::Pic,
 
         // When the atomics feature is activated then these two keys matter,
         // otherwise they're basically ignored by the standard library. In this
